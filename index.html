@@ -19,7 +19,7 @@
     />
 
     <link rel="stylesheet" href="css/main.css" />
-    <title>CWB Bookshop</title>
+    <title>CWB - Books for all!</title>
   </head>
 
   <body>
@@ -27,16 +27,33 @@
       <div class="container">
         <div class="logo">
           <h1><a href="index.html">Books for all!</a></h1>
-          <p>A Project by CWB JS course 2020 students</p>
+          <p>A Bookshop using Vanilla JavaScript</p>
         </div>
         <div class="login-box">
-          <button class="login-btn">
+          <button id="login-btn">
             <a href="login.html">Login <i class="fas fa-sign-in-alt"></i></a>
           </button>
           <button class="sign-out">
             Sign Out <i class="fas fa-sign-out-alt"></i>
           </button>
-          <button class="username"></button>
+          <button class="username"><i class="fas fa-user"></i></button>
+
+          <!-- start User Form Popup -->
+          <div class="form-popup" id="userForm">
+            <form class="form-container">
+              <h1>Login</h1>
+
+              <label for="uname">Username</label>
+              <input type="text" placeholder="Enter Username" />
+
+              <label for="password">Password</label>
+              <input type="password" placeholder="Enter Password" />
+
+              <button type="submit" id="btn-submit">Login</button>
+              <button type="button" id="btn-close">Close</button>
+            </form>
+          </div>
+          <!-- End User Form Popup -->
         </div>
       </div>
     </header>
@@ -61,11 +78,13 @@
     <footer>
       <div class="container">
         <div class="organizers">
-          <img src="images/bordersnone.png" alt="" />
+          <a href="https://www.bordersnone.com/coders-without-borders/"
+            ><img src="images/bordersnone.png" alt=""
+          /></a>
           <img src="images/cwb.png" alt="" />
           <ul>
-            <h5>Advanced JavaScript 2020 Course</h5>
-            <h6>Participant Students:</h6>
+            <h5>Books for all!</h5>
+            <h6>A Project by CWB JS Advanced Course 2020 Students:</h6>
             <li>Ahmed Eldemashqi</li>
             <li>Hany Afifi</li>
             <li>Pourija Husseini</li>
@@ -86,5 +105,6 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/login.js"></script>
   </body>
 </html>
