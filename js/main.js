@@ -21,7 +21,9 @@ function displayBooks(data) {
     let authorFullName = book.author.first_name + " " + book.author.last_name;
     let authorInUrl = authorFullName.replace(/\s+/g, "-");
     let bookInUrl = book.title.replace(/\s+/g, "-").trim();
-    let title = `<a class = 'title' href= "${authorInUrl}__${bookInUrl}.html?id=${book.id}">${book.title}</a>  `;
+    let title = `<a class = 'title' href= "books/book-details.html?id=${book.id}__${authorInUrl}__${bookInUrl}">${book.title}</a>  `;
+    // const title = `<a class = 'title' href= "books/book-details.html?id=${book.id}_${authorInUrl}__${bookInUrl}_">  ${book.title}</a>  `;
+
     let author = `<div class = 'author'> ${authorFullName}</div> `;
     let bookCover = `<img class = 'book-cover' src = ${book.cover_url}>`;
     bookDiv += `<div class='book'> ${title} ${author} ${bookCover}   </div> `;
