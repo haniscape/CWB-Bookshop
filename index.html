@@ -30,18 +30,22 @@
           <p>A Bookshop using Vanilla JavaScript</p>
         </div>
         <div class="login-box">
-          <button id="login-btn">
-            <a href="login.html">Login <i class="fas fa-sign-in-alt"></i></a>
+          <button id="btn-Form">
+            Login <i class="fas fa-sign-in-alt"></i>
           </button>
-          <button class="sign-out">
-            Sign Out <i class="fas fa-sign-out-alt"></i>
-          </button>
-          <button class="username"><i class="fas fa-user"></i></button>
 
           <!-- start User Form Popup -->
-          <div class="form-popup" id="userForm">
-            <form class="form-container">
-              <h1>Login</h1>
+          <div class="form-popup animate" id="userForm">
+            <form class="form-content">
+              <div class="avatar-container">
+                <span
+                  onclick="document.getElementById('userForm').style.display='none'"
+                  class="close-x"
+                  title="Close userForm"
+                  ><i class="fas fa-times"></i
+                ></span>
+                <img id="avatar" src="" alt="" />
+              </div>
 
               <label for="uname">Username</label>
               <input type="text" placeholder="Enter Username" />
