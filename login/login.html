@@ -3,11 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <!--Vendors  -->
+    <script
+      src="https://kit.fontawesome.com/ed0b3fb323.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Styling -->
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="login.css" />
-
-    <title>Document</title>
+    <title>Login :: CWB Books for all!</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1><a href="../index.html">Books for all!</a></h1>
+          <p>A Bookshop using Vanilla JavaScript</p>
+        </div>
+        <div id="login-box">
+          <div id="user-box">
+            <i class="fas fa-user" id="user-icon"></i>
+            <span id="user-show"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1>
+          There will be 2 tabs , one for sign in and the other for User
+          Registration
+        </h1>
+
+        <div class="tabs-wrapper">
+          <div class="tabs-container">
+            <div class="tab-nav">
+              <a href="#sign-in-tab" class="tab-navlink"
+                ><i class="fas fa-sign-in-alt"></i>Sign In</a
+              >
+              <a href="#user-reg-tab" class="tab-navlink"
+                ><i class="fas fa-user-plus"></i>New User</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="organizers">
+          <a href="https://www.bordersnone.com/coders-without-borders/"
+            ><img src="../images/bordersnone.png" alt=""
+          /></a>
+          <img src="../images/cwb.png" alt="" />
+          <ul>
+            <h5>Books for all!</h5>
+            <h6>A Project by CWB JS Advanced Course 2020 Students:</h6>
+            <li>Ahmad Alkaati</li>
+            <li>Hany Afifi</li>
+            <li>Pouriya Hoseiny</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-banner">
+        <p>&copy;2020 BORDERS:NONE - All Rights Reserved</p>
+        <div class="social">
+          <a href="https://www.facebook.com/bordersnone/"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/bordersnone/"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script src="book.js"></script>
+  </body>
 </html>
