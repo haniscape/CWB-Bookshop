@@ -1,2 +1,4 @@
-# CWB-Bookshop
-my version of the CWB JavaScript Advanced course 2020 final project
+# bookshop-project-2020-autumn
+An online bookshop web application
+
+The link to the REST API: https://bookshop-api.mirkwood.dev/
